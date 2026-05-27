@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO 優化標籤 -->
+    <title>奇點 JudgAI | AI保險科技平台 | 保險業務專業AI助手</title>
+    <meta name="description" content="奇點 JudgAI 是台灣領先的AI保險科技平台，專為保險業務員、保險顧問打造的AI智能助手。提供保險法規分析、保單銷售輔助、客戶諮詢AI化服務，讓保險專業者擁有懂法的科技夥伴。">
+    <meta name="keywords" content="奇點AI, 奇點, AI保險, 保險科技, JudgAI, 保險AI助手, 保險業務AI, 保險法規AI, InsurTech, 保險科技平台, AI保險顧問, 保險數位化, 智能保險, 保險法律AI">
+    <meta name="author" content="奇點 JudgAI">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="zh-TW">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="奇點 JudgAI">
+    <meta property="og:title" content="奇點 JudgAI | AI保險科技平台 | 保險業務專業AI助手">
+    <meta property="og:description" content="台灣領先的AI保險科技平台，專為保險業務員打造的AI智能助手。從經驗、法條到正確說明，讓每位保險專業者擁有一位懂法的科技夥伴。">
+    <meta property="og:image" content="./JudgAI_pre.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="奇點 JudgAI - AI保險科技平台">
+    <!-- <meta property="og:url" content="https://judgai.com"> -->
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="奇點 JudgAI | AI保險科技平台">
+    <meta name="twitter:description" content="台灣領先的AI保險科技平台，專為保險業務員打造的AI智能助手。">
+    <meta name="twitter:image" content="./JudgAI_pre.png">
+    
+    <!-- 結構化數據 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "奇點 JudgAI",
+      "alternateName": ["奇點AI", "JudgAI", "奇點"],
+      "description": "台灣領先的AI保險科技平台，專為保險業務員、保險顧問打造的AI智能助手",
+      "url": "https://judgai.com",
+      "logo": "https://judgai.com/奇點.png",
+      "foundingDate": "2024",
+      "sameAs": [
+        "https://www.youtube.com/playlist?list=PLZExHhjtL82X_tH-PVw3adskNY1aVqckQ"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://aistudy.pse.is/insurance-bot"
+      },
+      "offers": {
+        "@type": "Offer",
+        "category": "Software",
+        "name": "AI保險科技服務",
+        "description": "提供保險法規分析、保單銷售輔助、客戶諮詢AI化服務"
+      }
+    }
+    </script>
+    
+    <!-- 額外的結構化數據 - 軟體應用 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "JudgAI",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "description": "AI保險科技平台，專為保險專業者提供法規分析、保單銷售輔助的智能助手",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TWD",
+        "description": "免費試用版本"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "127"
+      }
+    }
+    </script>
+    
+    <!-- Canonical URL -->
+    <!-- <link rel="canonical" href="https://judgai.com"> -->
+    
+    <!-- Favicon 和圖示 -->
+    <link rel="icon" type="image/png" href="奇點.png">
+    <link rel="apple-touch-icon" href="奇點.png">
+    
+    <!-- 字體和樣式 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="奇點.png">
+    <style>
+
+        /* 自定義樣式 */
+        body {
+            font-family: 'Noto Sans TC', 'Inter', sans-serif;
+            background-color: #050816; /* 深邃星空背景 */
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #a78bfa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-section {
+            position: relative;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            overflow: hidden;
+        }
+        .plan-card, .audience-card, .image-showcase-card {
+            background-color: rgba(17, 24, 39, 0.8); /* 半透明玻璃效果 */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .plan-card:hover, .audience-card:hover, .image-showcase-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: rgba(56, 189, 248, 0.6);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+        }
+        .popular-badge {
+            background: linear-gradient(90deg, #38bdf8, #a78bfa);
+            box-shadow: 0 0 15px #38bdf8;
+        }
+        .cta-button {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            transition: all 0.3s ease-in-out;
+        }
+        .cta-button:hover {
+            box-shadow: 0 0 20px #38bdf8;
+            transform: scale(1.05);
+        }
+        .cta-button-secondary {
+            background-color: transparent;
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+        .cta-button-secondary:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+        }
+        .feature-item svg {
+            flex-shrink: 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border-color: rgba(56, 189, 248, 0.2);
+            vertical-align: middle;
+        }
+        @media (min-width: 1024px) {
+            .comparison-table th, .comparison-table td {
+                font-size: 0.95rem;
+            }
+        }
+        .table-section-header {
+            background-color: rgba(17, 24, 39, 0.9);
+        }
+        .check-icon {
+            color: #34d399; /* 綠色 */
+            font-weight: bold;
+        }
+        .cross-icon {
+            color: #f87171; /* 紅色 */
+            font-weight: bold;
+        }
+        /* Modal 樣式 */
+        .enlargeable-image {
+            cursor: pointer;
+        }
+        .modal-overlay {
+            transition: opacity 0.3s ease;
+        }
+        .modal-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .modal-content {
+            transition: transform 0.3s ease;
+        }
+        .modal-overlay.hidden .modal-content {
+            transform: scale(0.95);
+        }
+        
+        /* Logo 科技感動畫效果 */
+        @keyframes pulse-glow {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(56, 189, 248, 0.3), 0 0 40px rgba(168, 139, 250, 0.2);
+                filter: brightness(1) contrast(1.1);
+            }
+            50% { 
+                box-shadow: 0 0 30px rgba(56, 189, 248, 0.5), 0 0 60px rgba(168, 139, 250, 0.3);
+                filter: brightness(1.2) contrast(1.3);
+            }
+        }
+        
+        @keyframes rotate-gradient {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes scale-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .logo-container {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        
+        .logo-container:hover {
+            transform: scale(1.1);
+            filter: brightness(1.3) contrast(1.2);
+        }
+        
+        .logo-rotating-border {
+            animation: rotate-gradient 3s linear infinite;
+        }
+        
+        .logo-pulse-bg {
+            animation: scale-pulse 2s ease-in-out infinite;
+        }
+        
+        .logo-image {
+            animation: pulse-glow 2.5s ease-in-out infinite;
+        }
+        
+        /* Header 導航樣式 */
+        .header-nav {
+            background: rgba(5, 8, 22, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        
+        /* 響應性文字縮放 */
+        .responsive-brand-text {
+            font-size: clamp(1rem, 4vw, 1.5rem);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .responsive-hero-title {
+            font-size: clamp(2rem, 8vw, 4rem);
+            line-height: 1.1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+        
+        .responsive-hero-subtitle {
+            font-size: clamp(1.2rem, 5vw, 2.5rem);
+            line-height: 1.2;
+            /* 允許長文字適當換行，但控制行數 */
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            word-break: keep-all;
+            hyphens: none;
+        }
+        
+        .responsive-hero-description {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            line-height: 1.5;
+            /* 描述文字可以適當換行 */
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* 導航連結響應性 */
+        .responsive-nav-link {
+            font-size: clamp(0.875rem, 2.5vw, 1rem);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+        
+        /* 按鈕響應性 */
+        .responsive-cta-button {
+            font-size: clamp(0.875rem, 3vw, 1.125rem);
+            padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 4vw, 2rem);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            display: inline-block;
+        }
+        
+        /* 容器響應性優化 */
+        .responsive-container {
+            padding-left: clamp(1rem, 5vw, 2rem);
+            padding-right: clamp(1rem, 5vw, 2rem);
+        }
+        
+        /* 極小螢幕優化 */
+        @media (max-width: 480px) {
+            .responsive-hero-title {
+                font-size: clamp(1.5rem, 6vw, 2.5rem);
+            }
+            .responsive-hero-subtitle {
+                font-size: clamp(1rem, 4vw, 1.5rem);
+                -webkit-line-clamp: 3; /* 小螢幕允許更多行 */
+                line-clamp: 3;
+            }
+            .responsive-brand-text {
+                font-size: clamp(0.875rem, 3vw, 1.25rem);
+            }
+            .responsive-nav-link {
+                font-size: clamp(0.75rem, 2vw, 0.875rem);
+            }
+            .responsive-cta-button {
+                font-size: clamp(0.75rem, 2.5vw, 1rem);
+                padding: clamp(0.375rem, 1.5vw, 0.5rem) clamp(0.75rem, 3vw, 1.5rem);
+            }
+        }
+        
+        /* 中等螢幕優化 */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .responsive-hero-title {
+                font-size: clamp(2.5rem, 6vw, 3.5rem);
+            }
+            .responsive-hero-subtitle {
+                font-size: clamp(1.5rem, 4vw, 2rem);
+            }
+        }
+        
+        /* 大螢幕優化 */
+        @media (min-width: 1024px) {
+            .responsive-hero-subtitle {
+                -webkit-line-clamp: 1; /* 大螢幕單行顯示 */
+                line-clamp: 1;
+            }
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #38bdf8, #a78bfa);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::before {
+            width: 100%;
+        }
+        
+        .nav-link:hover {
+            color: #38bdf8;
+            transform: translateY(-2px);
+        }
+        
+        .mobile-menu {
+            background: rgba(5, 8, 22, 0.98);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        .light-theme .mobile-menu {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(203, 213, 225, 0.3);
+        }
+        /* 淺色主題下，針對id設定footer顏色 */
+        .light-theme #main-footer {
+            background: #fff !important;
+            border-top: 1px solid #e2e8f0 !important;
+            color: #334155 !important;
+        }
+         /* 淺色主題下footer關鍵詞chip顏色 */
+        .light-theme #footer-keywords .bg-blue-600\/20 {
+            background: #e0f2fe !important;
+            color: #0369a1 !important;
+        }
+
+        /* Light mode overrides */
+        :is(html.light, body.light, [data-theme="light"], .theme-light) body {
+            background-color: #ffffff;
+            color: #0f172a; /* slate-900 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .header-nav {
+            background: rgba(255, 255, 255, 0.9);
+            border-bottom-color: rgba(203, 213, 225, 0.8); /* slate-300 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .nav-link {
+            color: #0f172a !important;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .mobile-menu {
+            background: rgba(255,255,255,0.98);
+            border-color: rgba(203,213,225,0.8);
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .hero-section {
+            background: radial-gradient(ellipse at bottom, #eef4ff 0%, #ffffff 70%);
+            color: #0f172a;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .hero-section .text-gray-300 {
+            color: #475569 !important; /* slate-600 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .hero-section .text-white {
+            color: #0f172a !important; /* titles become dark */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .plan-card,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .audience-card,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .image-showcase-card {
+            background-color: rgba(255,255,255,0.8);
+            border-color: rgba(203,213,225,0.8);
+            box-shadow: 0 6px 24px rgba(2,132,199,0.06);
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .image-showcase-card img {
+            border-color: #e2e8f0; /* slate-200 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .audience-card h3,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .audience-card h3,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .plan-card h3 {
+            color: #0f172a !important;
+        }
+        /* 強制 image card 標題/描述顏色優先 */
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .imgcard-title {
+            color: #0ea5e9 !important;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .imgcard-desc {
+            color: #0a6495 !important;
+            font-weight: 500;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .image-showcase-card p,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .text-gray-400 {
+            color: #475569 !important; /* slate-600 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .text-gray-300 {
+            color: #334155 !important; /* slate-700 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .comparison-table thead {
+            background: #e2e8f0; /* slate-200 */
+            color: #0f172a;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .comparison-table tbody tr.bg-gray-900 {
+            background: #ffffff;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .table-section-header {
+            background: #f1f5f9; /* slate-100 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) section.bg-gray-900\/50,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) section.bg-gray-900\/60 {
+            background-color: #f8fafc; /* slate-50 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer {
+            background-color: #ffffff !important;
+            border-top-color: #e2e8f0 !important; /* slate-200 */
+            color: #554233 !important;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer h3,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer .text-white {
+            color: #0f172a !important;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer .text-gray-400 {
+            color: #475569 !important;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer .bg-blue-600\/20 {
+            background-color: rgba(2,132,199,0.12) !important; /* cyan-like chip bg */
+            color: #0369a1 !important; /* cyan-700 text */
+        }
+        /* Enhanced footer text contrast for light mode - pure black for maximum clarity */
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer h3.text-white {
+            color: #000000 !important; /* pure black for titles */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer .text-gray-400 {
+            color: #000000 !important; /* pure black for content */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer strong {
+            color: #000000 !important; /* pure black for bold keywords */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer p {
+            color: #000000 !important; /* pure black for all paragraphs */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer li {
+            color: #000000 !important; /* pure black for list items */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer a {
+            color: #000000 !important; /* pure black for links */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) footer a:hover {
+            color: #374151 !important; /* slightly gray on hover for feedback */
+        }
+        /* Reduce dark overlays/masks in light mode across sections */
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-cyan-900\/30,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-blue-900\/30,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-yellow-900\/40,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-green-900\/40,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-purple-900\/40,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-purple-800\/50,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-green-800\/50,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-yellow-800\/50,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-blue-800,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .bg-gray-900\/80,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .to-gray-800\/60,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .from-gray-900\/80 {
+            background-color: rgba(241,245,249,0.8) !important; /* slate-100 tint */
+            background-image: none !important;
+            color: #0f172a !important;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .border-gray-700,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .border-gray-700\/50,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .border-gray-600,
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .border-gray-600\/50 {
+            border-color: #cbd5e1 !important; /* slate-300 */
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .text-white {
+            color: #0f172a !important;
+        }
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .text-gray-200 {
+            color: #334155 !important; /* slate-700 */
+        }
+        
+        /* Image Card 專屬主題樣式 */
+        /* 深色主題下底色 */
+        .imgcard-custom {
+            background: linear-gradient(90deg, rgba(56,189,248,0.18) 0%, rgba(167,139,250,0.18) 100%) !important;
+            border: 1px solid rgba(56,189,248,0.18) !important;
+        }
+        .imgcard-title {
+            color: #fff !important;
+            transition: color 0.2s;
+            z-index: 1;
+        }
+        .imgcard-desc {
+            color: #7dd3fc !important;
+            font-weight: 500;
+            z-index: 1;
+        }
+        /* 淺色主題覆蓋 */
+        :is(html.light, body.light, [data-theme="light"], .theme-light) .imgcard-custom {
+            background: linear-gradient(90deg, #dbeafe 0%, #f4edfe 100%) !important;
+            border: 1px solid #dbeafe !important;
+        }
+        /* 淺色主題下 Image Card 標題/描述顏色（用 id 方式指定，參考 interact-desc） */
+        .light-theme #imgcard-free .imgcard-title,
+        .light-theme #imgcard-standard .imgcard-title,
+        .light-theme #imgcard-pro .imgcard-title {
+            color: #0ea5e9 !important;
+        }
+        .light-theme #imgcard-free .imgcard-desc,
+        .light-theme #imgcard-standard .imgcard-desc,
+        .light-theme #imgcard-pro .imgcard-desc {
+            color: #0a6495 !important;
+        }
+        /* Image Card 圖片統一預覽比例與樣式（直向長方形 3:4） */
+        .imgcard-custom .imgcard-img {
+            width: 100% !important;
+            aspect-ratio: 4/5 !important;
+            height: auto !important;
+            max-height: 320px !important;
+            object-fit: cover !important;
+            object-position: center !important;
+            background-color: #111827 !important;
+            border-radius: 0.75rem !important;
+            transition: transform 0.3s, box-shadow 0.3s !important;
+            cursor: zoom-in !important;
+            display: block !important;
+        }
+        @media (max-width: 640px) {
+            .imgcard-custom .imgcard-img {
+                max-height: 200px !important;
+            }
+        }
+        /* 淺色主題下 JudgAI 解方 強調色加深 */
+        .light-theme #judgai-solution-1,
+        .light-theme #judgai-solution-2,
+        .light-theme #judgai-solution-3 {
+            color: #0369a1 !important;
+        }
+        
+    </style>
+</head>
+<body class="text-gray-200">
+    <!-- Header 導航 -->
+    <header class="header-nav fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo 和品牌名稱 -->
+                <div class="flex items-center space-x-3">
+                    <img src="奇點.png" alt="JudgAI Logo" class="h-10 w-10 rounded-full">
+                    <span class="font-orbitron font-bold gradient-text responsive-brand-text">JudgAI</span>
+                </div>
+                
+                <!-- 桌面版導航 -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2 px-3">
+                        首頁
+                    </a>
+                    <a href="pricing.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2 px-3">
+                        方案定價
+                    </a>
+                    <a href="column_article.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2 px-3">
+                        AI行銷與業務專欄
+                    </a>
+                    <a href="ai_difference.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2 px-3">
+                        AI差異對比
+                    </a>
+                    <a href="insur_policy_demo.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2 px-3">
+                        AI保單銷售手冊
+                    </a>
+                    <a href="#live-sharing" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2 px-3">
+                        直播分享
+                    </a>
+                </nav>
+                
+                <!-- CTA 按鈕 -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://line.me/ti/p/ECTAxiLRSh" target="_blank" class="cta-button text-white font-medium py-2 px-6 rounded-lg text-sm">
+                        聯絡我們
+                    </a>
+                </div>
+                
+                <!-- 手機版菜單按鈕 -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-200 hover:text-blue-400 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- 手機版導航菜單 -->
+            <div id="mobile-menu" class="md:hidden hidden mobile-menu rounded-lg mt-2 py-4">
+                <div class="flex flex-col space-y-3 px-4">
+                    <a href="index.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2">
+                        首頁
+                    </a>
+                    <a href="pricing.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2">
+                        方案定價
+                    </a>
+                    <a href="column_article.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2">
+                        AI行銷與業務專欄
+                    </a>
+                       <a href="ai_difference.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2">
+                           AI差異對比
+                       </a>
+                    <a href="insur_policy_demo.html" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2">
+                        AI保單銷售手冊
+                    </a>
+                    <a href="#live-sharing" class="nav-link responsive-nav-link text-gray-200 hover:text-blue-400 font-medium py-2">
+                        直播分享
+                    </a>
+                    <div class="pt-3 border-t border-gray-700">
+                        <a href="https://aistudy.pse.is/insurance-bot" target="_blank" class="cta-button block text-center text-white font-medium py-2 px-6 rounded-lg text-sm">
+                            免費試用
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="min-h-screen w-full flex flex-col pt-20">
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="hero-section text-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center flex flex-col items-center justify-center">
+                    <div class="flex flex-col items-center mb-8">
+                        <div class="relative mb-4">
+                            <div class="logo-container relative flex items-center justify-center" style="width: 9rem; aspect-ratio: 1/1; min-width: 9rem; min-height: 9rem; max-width: 9rem; max-height: 9rem;">
+                                <!-- 外層旋轉漸層邊框 -->
+                                <span class="logo-rotating-border absolute inset-0 rounded-full" style="background: conic-gradient(from 0deg at 50% 50%, #38bdf8 0%, #818cf8 25%, #a78bfa 50%, #f472b6 75%, #38bdf8 100%); filter: blur(8px) brightness(1.3); opacity: 0.8; aspect-ratio: 1/1;"></span>
+                                
+                                <!-- 中層脈動背景 -->
+                                <span class="logo-pulse-bg absolute inset-1 rounded-full" style="background: radial-gradient(circle at 30% 30%, rgba(56,189,248,0.8), rgba(17,24,39,0.9), rgba(168,139,250,0.6)); box-shadow: inset 0 2px 8px rgba(56,189,248,0.3), 0 4px 32px rgba(56,189,248,0.2); backdrop-filter: blur(8px); aspect-ratio: 1/1;"></span>
+                                
+                                <!-- 內層發光圓環 -->
+                                <span class="absolute inset-2 rounded-full" style="background: transparent; border: 2px solid rgba(56,189,248,0.6); box-shadow: 0 0 15px rgba(56,189,248,0.4), inset 0 0 15px rgba(168,139,250,0.2); aspect-ratio: 1/1;"></span>
+                                
+                                <!-- Logo 圖片 -->
+                                <img src="奇點.png" alt="JudgAI Logo" class="logo-image relative z-10 object-cover rounded-full" style="width: 7.5rem; height: 7.5rem; min-width: 7.5rem; min-height: 7.5rem; max-width: 7.5rem; max-height: 7.5rem; border-radius: 50%; aspect-ratio: 1/1; border: 3px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.02);">
+                                
+                                <!-- 頂部玻璃反光 -->
+                                <span class="absolute z-20 left-1/2 top-2 -translate-x-1/2" style="width: 65%; height: 30%; border-radius: 100% 100% 50% 50%/90% 90% 30% 30%; background: linear-gradient(180deg,rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.1) 60%, transparent 100%); filter: blur(1px); opacity: 0.8;"></span>
+                                
+                                <!-- 底部科技光暈 -->
+                                <span class="absolute z-0 left-1/2 bottom-0 -translate-x-1/2" style="width: 80%; height: 30%; border-radius: 100% 100% 50% 50%/70% 70% 40% 40%; background: radial-gradient(ellipse at center, rgba(56,189,248,0.3) 0%, rgba(168,139,250,0.2) 50%, transparent 100%); filter: blur(6px);"></span>
+                            </div>
+                        </div>
+                        <h1 class="font-orbitron responsive-hero-title font-bold tracking-wider mb-2">
+                            奇點 JudgAI
+                        </h1>
+                        <span class="gradient-text block mt-2 responsive-hero-subtitle font-bold">當經驗成為奇點，AI更是保險未來的引擎</span>
+                    </div>
+                    <p class="mt-6 max-w-3xl mx-auto responsive-hero-description text-gray-300">
+                        從經驗、法條到正確說明，奇點讓每位保險專業者擁有一位懂法的科技夥伴
+                    </p>
+
+
+                    
+                    <div class="mt-10 flex flex-wrap justify-center items-center gap-4">
+                        <button onclick="showFreTrialTerms()" class="cta-button responsive-cta-button inline-block text-white font-bold rounded-lg">
+                            立即開始免費試用 →
+                        </button>
+                        <a href="pricing.html" class="cta-button responsive-cta-button inline-block text-white font-bold rounded-lg" style="background: linear-gradient(90deg, #a78bfa, #f472b6);">
+                            3億字法險專業版免費體驗！
+                        </a>
+                        <a href="#judg-ai-core" class="cta-button-secondary responsive-cta-button inline-block font-bold rounded-lg">
+                            了解更多功能
+                        </a>
+                    </div>
+                    <div class="mt-16 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-8 h-8 text-cyan-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 15.75H3m18 0h-1.5M8.25 21v-1.5M15.75 3v1.5M15.75 21v-1.5M12 6.75h.008v.008H12V6.75Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 3.75h.008v.008H12v-.008Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 3.75h.008v.008H12v-.008Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 3.75h.008v.008H12V18Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm3-11.25h.008v.008H15V6.75Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 3.75h.008v.008H15v-.008Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 3.75h.008v.008H15v-.008Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 3.75h.008v.008H15V18Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-3.75-3.75h.008v.008H11.25v-.008Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375-3.75h.008v.008H11.25V6.75Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 7.5h.008v.008H11.25v-.008Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm.375 3.75h.008v.008H11.25V18Zm-.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" /></svg>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">法律資料庫AI搜尋引擎</h3>
+                                <p class="text-gray-400 mt-1">融合保險法規與稅務知識庫，並結合多位保險專家、會計師、財稅專家、地政士等司法專業人士之經驗，協助您有效快速生成完整且正確的資訊，節省您的時間，提升服務價值贏得客戶信賴。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-8 h-8 text-cyan-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m-1.125 9a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Z" /><path stroke-linecap="round" stroke-linejoin="round" d="m3 16.125 1.125-1.125" /></svg>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">智慧整合(法令 判決 函釋)</h3>
+                                <p class="text-gray-400 mt-1">自動匯整解析法險相關裁判書與函釋，擷取重點條文、關鍵爭點與案例關聯，精準支援專業判讀與實務應用。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-8 h-8 text-cyan-400 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193l-3.722.267c-.317.022-.652.022-.969 0l-3.722-.267c-1.133-.093-1.98-1.057-1.98-2.193V10.608c0-.97-.616-1.813-1.5-2.097m14.25-6.118c.223.194.428.422.612.678l.258.347a.96.96 0 0 1 0 1.152l-.258.347c-.184.256-.389.484-.612.678m-14.25 0c-.223.194-.428.422-.612.678l-.258.347a.96.96 0 0 0 0 1.152l.258.347c.184.256.389.484.612.678m14.25-6.118-3.722.267c-.317.022-.652.022-.969 0l-3.722-.267m14.25 0-3.722.267c-.317.022-.652.022-.969 0l-3.722-.267M3.75 8.511c-.884.284-1.5 1.128-1.5 2.097v4.286c0 1.136.847 2.1 1.98 2.193l3.722.267c.317.022.652.022.969 0l3.722-.267c1.133-.093 1.98-1.057 1.98-2.193V10.608c0-.97-.616-1.813-1.5-2.097" /></svg>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">客製化知識庫與AI對話助理</h3>
+                                <p class="text-gray-400 mt-1">結合法律資料庫三億字以上資料與上傳資料進行深度訓練，打造專屬 AI 機器人，強化個人專業品牌與教學，行銷服務一體化服務。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Image Showcase Section -->
+            <section id="judg-ai-core" class="py-16 md:py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="font-orbitron text-3xl md:text-4xl font-bold gradient-text">
+                        一窺 JudgAI 智慧核心
+                    </h2>
+                    <p class="mt-6 max-w-3xl mx-auto text-lg text-gray-300">
+                        直觀感受不同版本的強大功能，體驗 AI 如何將複雜法規轉化為您的致勝洞見。
+                    </p>
+                    <!-- 嵌入 YouTube 影片 -->
+                    <div class="mt-8 flex justify-center">
+                        <div class="w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl border border-cyan-700">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jkwCmfT07Is" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full h-full"></iframe>
+                        </div>
+                    </div>
+                    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Image Card 1: 免費版 -->
+                        <div id="imgcard-free" class="image-showcase-card p-6 rounded-2xl flex flex-col items-center imgcard-custom">
+                            <div class="responsive-image-container mb-2 preview-img rounded-2xl shadow-xl bg-slate-900" style="width:100%;max-width:220px;">
+                                <img src="免費.png" alt="JudgAI 免費版介面" class="imgcard-img enlargeable-image" data-full="免費.png" onerror="this.onerror=null;this.src='https://placehold.co/300x400/090a0f/e0e0e0?text=免費版圖片';">
+                            </div>
+                            <h3 class="imgcard-title text-xl font-bold">免費版</h3>
+                            <p class="imgcard-desc">基礎問答與法規引用</p>
+                        </div>
+                        <!-- Image Card 2: 標準版 -->
+                        <div id="imgcard-standard" class="image-showcase-card p-6 rounded-2xl flex flex-col items-center imgcard-custom">
+                            <div class="responsive-image-container mb-2 preview-img rounded-2xl shadow-xl bg-slate-900" style="width:100%;max-width:220px;">
+                                <img src="標準.png" alt="JudgAI 標準版介面" class="imgcard-img enlargeable-image" data-full="標準.png" onerror="this.onerror=null;this.src='https://placehold.co/300x400/090a0f/e0e0e0?text=標準版圖片';">
+                            </div>
+                            <h3 class="imgcard-title text-xl font-bold">標準版</h3>
+                            <p class="imgcard-desc">進階案例與摘要</p>
+                        </div>
+                        <!-- Image Card 3: 專業版 -->
+                        <div id="imgcard-pro" class="image-showcase-card p-6 rounded-2xl flex flex-col items-center imgcard-custom">
+                            <div class="responsive-image-container mb-2 preview-img rounded-2xl shadow-xl bg-slate-900" style="width:100%;max-width:220px;">
+                                <img src="專業.png" alt="JudgAI 專業版介面" class="imgcard-img enlargeable-image" data-full="專業.png" onerror="this.onerror=null;this.src='https://placehold.co/300x400/090a0f/e0e0e0?text=專業版圖片';">
+                            </div>
+                            <h3 class="imgcard-title text-xl font-bold">專業版</h3>
+                            <p class="imgcard-desc">深度分析與函釋總結</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Introduction & Target Audience Section -->
+            <section class="py-16 md:py-24 bg-gray-900/50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="font-orbitron text-3xl md:text-4xl font-bold gradient-text">
+                        專為保險專業人士與知識創作者打造的智慧夥伴
+                    </h2>
+                    <p class="mt-6 max-w-4xl mx-auto text-lg text-gray-300 leading-relaxed">
+                        無論您是第一線的保險顧問、會計師、金融顧問、地政士、代書、專業講師、教育訓練規劃者或者是司法從業專家，或正在打造個人保險品牌的內容創作者，奇點JudgAI，有效協助您快速提煉知識，掌握完整資訊，提供正確服務。我們整合龐大資料(如:民法、刑法、各類稅法、保險法、勞動法..等險)，轉化成有專業價值的資訊服務，幫您提升競爭力，在瞬息萬變的市場中換道競賽。
+                    </p>
+                    
+                    <!-- Target Audience Cards -->
+                    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                        <!-- Card 1: 保險顧問 / 業務人員 -->
+                        <div class="audience-card p-8 rounded-2xl">
+                            <div class="flex items-center mb-4">
+                                <svg class="w-10 h-10 text-cyan-400 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+                                <h3 class="text-xl font-bold text-white">保險顧問 / 業務人員</h3>
+                            </div>
+                            <div class="space-y-3">
+                                <p><strong class="text-gray-200">痛點:</strong> <span class="text-gray-400">法令理解困難、匯整保險爭議或相關法律知識耗費時間、應對客戶提問，難以即時完整且正確說明。</span></p>
+                                <p><strong id="judgai-solution-1" class="text-cyan-200">JudgAI 解方:</strong> <span class="text-cyan-300">快速生成保險知識且匯整內容，提供實例參考，更提供法稅勞相關參考，深度對話記憶與學習指導，打造專業化行銷的 AI 保險庫與專業幫手。</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: 教育講師 / 知識型創作者 -->
+                        <div class="audience-card p-8 rounded-2xl">
+                            <div class="flex items-center mb-4">
+                                 <svg class="w-10 h-10 text-cyan-400 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path d="M15.75 10.5l4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9A2.25 2.25 0 0 0 4.5 18.75Z" /></svg>
+                                <h3 class="text-xl font-bold text-white">教育講師 / 知識型創作者</h3>
+                            </div>
+                            <div class="space-y-3">
+                                <p><strong class="text-gray-200">痛點:</strong> <span class="text-gray-400">精準教材準備耗時、內容更難更新、知識難以有效完整教導。<br><br></span></p>
+                                <p><strong id="judgai-solution-2" class="text-cyan-200">JudgAI 解方:</strong> <span class="text-cyan-300">可上傳與訓練個人知識庫，生成教學對話機器人與客製回應內容，強化學員體驗、提升課程價值與續約率。</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: 法務 / 法險研究者 -->
+                        <div class="audience-card p-8 rounded-2xl">
+                            <div class="flex items-center mb-4">
+                                <svg class="w-10 h-10 text-cyan-400 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75c0 3.142-2.558 5.69-5.69 5.69s-5.69-2.558-5.69-5.69c0-3.142 2.558-5.69 5.69-5.69s5.69 2.558 5.69 5.69ZM11.56 5.69h.008v.008h-.008v-.008Zm-2.812 2.812h.008v.008h-.008V8.502Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M11.56 5.69h.008v.008h-.008v-.008Zm-2.812 2.812h.008v.008h-.008V8.502Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 11.25a2.25 2.25 0 0 1 2.25 2.25v4.5a2.25 2.25 0 0 1-2.25 2.25h-5.25a2.25 2.25 0 0 1-2.25-2.25v-4.5a2.25 2.25 0 0 1 2.25-2.25h5.25Z" /></svg>
+                                <h3 class="text-xl font-bold text-white">法務 / 法險研究者</h3>
+                            </div>
+                            <div class="space-y-3">
+                                <p><strong class="text-gray-200">痛點:</strong> <span class="text-gray-400">各種資料分散(法條 函令 判決..) ，網路搜尋資料耗時效率低，難以整合正確運用有效資訊。</span></p>
+                                <p><strong id="judgai-solution-3" class="text-cyan-200">JudgAI 解方:</strong> <span class="text-cyan-300">智慧搜尋與總結全台法學資料(如:保險法、稅法函釋與裁判書，快速萃取重點、比對案例)，有效快速協助匯整資料，呈現完整與正確的資訊。</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                <!-- Detailed Comparison Table -->
+                <div id="comparison-table" class="mb-24 scroll-mt-20">
+                    <h2 class="font-orbitron text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text">詳細功能比較</h2>
+                    <div class="overflow-x-auto rounded-lg border border-gray-700" style="max-height: 80vh;">
+                        <table class="w-full text-sm text-left comparison-table">
+                            <thead class="sticky top-0 z-10 bg-gray-800 text-xs text-white uppercase tracking-wider">
+                                <tr>
+                                    <th scope="col" class="px-6 py-4">項目</th>
+                                    <th scope="col" class="px-6 py-4 text-center">免費版</th>
+                                    <th scope="col" class="px-6 py-4 text-center">專業版</th>
+                                    <th scope="col" class="px-6 py-4 text-center">訂製版</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Section: 基本資訊 -->
+                                <tr class="table-section-header">
+                                    <th scope="row" class="px-6 py-3 text-base font-bold text-cyan-400">基本資訊</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">使用者</td>
+                                    <td class="px-6 py-4 text-center">免費會員</td>
+                                    <td class="px-6 py-4 text-center">付費會員</td>
+                                    <td class="px-6 py-4 text-center">專家老師</td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">使用方便（LINE、網頁）<br>1.手機/平板<br>2.筆電/桌機</td>
+                                    <td class="px-6 py-4 text-center">1.Line 機器人</td>
+                                    <td class="px-6 py-4 text-center">1.Line 機器人<br>2.網頁 完整服務</td>
+                                    <td class="px-6 py-4 text-center">1.個人IP<br>2.Line 機器人<br>3.網頁 完整服務</td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">年費</td>
+                                    <td class="px-6 py-4 text-center">免費</td>
+                                    <td class="px-6 py-4 text-center">18,888</td>
+                                    <td class="px-6 py-4 text-center">洽談</td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">月費訂閱制（彈性付款、隨時可停）</td>
+                                    <td class="px-6 py-4 text-center">-</td>
+                                    <td class="px-6 py-4 text-center">請參考 <a href="pricing.html#pricing-plans" class="text-cyan-400 underline" target="_blank">訂閱說明</a></td>
+                                    <td class="px-6 py-4 text-center">-</td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">初學者訓練課程（新手引導）</td>
+                                    <td class="px-6 py-4 text-center">聊天機器人</td>
+                                    <td class="px-6 py-4 text-center">1. 聊天機器人<br>2. 網頁AI助手</td>
+                                    <td class="px-6 py-4 text-center">1. 聊天機器人<br>2. 網頁AI助手<br>3. 專門導師</td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">知識庫（核心功能）</td>
+                                    <td class="px-6 py-4 text-center">查詢即時法院判決書</td>
+                                    <td class="px-6 py-4 text-center">查詢歷史法院判決書（5年）</td>
+                                    <td class="px-6 py-4 text-center">全國法院判決書（26萬字）</td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">保險司法裁判書 （2.1億字+；持續更新）</td>
+                                    <td class="px-6 py-4 text-center">無或1則</td>
+                                    <td class="px-6 py-4 text-center">✅</td>
+                                    <td class="px-6 py-4 text-center">✅</td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b">
+                                    <td class="px-6 py-4 font-medium text-gray-300">法險知識庫（3.2 億字+；持續更新）</td>
+                                    <td class="px-6 py-4 text-center">無或1則</td>
+                                    <td class="px-6 py-4 text-center">✅</td>
+                                    <td class="px-6 py-4 text-center">✅</td>
+                                </tr>
+                                <!-- Section: 主要特色 -->
+                                <tr class="table-section-header">
+                                    <th scope="row" class="px-6 py-3 text-base font-bold text-cyan-400">主要特色</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">專屬AI<br>大語言模型</td><td class="px-6 py-4 text-center">2.0 版</td><td class="px-6 py-4 text-center">深度 3.0 版</td><td class="px-6 py-4 text-center">1.深度 3.0 版<br>2.自製專權威知識庫</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">獨家知識庫<br>整合超過3,000萬字</td><td class="px-6 py-4 text-center">1.引用</td><td class="px-6 py-4 text-center">1.引用<br>2.總結</td><td class="px-6 py-4 text-center">1.引用<br>2.總結<br>3.結合權威資料庫</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">知識庫持續更新</td><td class="px-6 py-4 text-center">逐步更新</td><td class="px-6 py-4 text-center">確保即時有效</td><td class="px-6 py-4 text-center">打造個人知識品牌</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">智慧線上搜尋</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">每日提問上限</td><td class="px-6 py-4 text-center">5 次</td><td class="px-6 py-4 text-center">請參考 <a href="pricing.html#pricing-plans" class="text-cyan-400 underline" target="_blank">訂閱說明</a></td><td class="px-6 py-4 text-center">請參考 <a href="pricing.html#pricing-plans" class="text-cyan-400 underline" target="_blank">訂閱說明</a></td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">實戰銷售AI助理</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">網頁個人後台</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+
+                                <!-- Section: AI 模型功能 -->
+                                <tr class="table-section-header">
+                                    <th scope="row" class="px-6 py-3 text-base font-bold text-cyan-400">AI 模型功能</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">深度思考功能</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center">✅（汲取專家經驗）</td><td class="px-6 py-4 text-center">✅（汲取專家經驗）</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">生成字數</td><td class="px-6 py-4 text-center">&lt; 500</td><td class="px-6 py-4 text-center">&lt; 3,500</td><td class="px-6 py-4 text-center">&lt; 20,000</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">每次輸入的提問字數</td><td class="px-6 py-4 text-center">50字</td><td class="px-6 py-4 text-center">700字</td><td class="px-6 py-4 text-center">客製</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">上下文繼續對話記憶</td><td class="px-6 py-4 text-center">3 筆</td><td class="px-6 py-4 text-center">8 筆</td><td class="px-6 py-4 text-center">訂製</td></tr>
+
+                                <!-- Section: 自訂知識庫 -->
+                                <tr class="table-section-header">
+                                    <th scope="row" class="px-6 py-3 text-base font-bold text-cyan-400">自訂知識庫</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">可上傳（自訂知識庫）</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">自訂知識庫（總字數）</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center">送 100,000字</td><td class="px-6 py-4 text-center">送 200,000字</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">加值 100萬字額度</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center">$5,000</td><td class="px-6 py-4 text-center">$4,000</td></tr>
+
+                                <!-- Section: 知識庫內容 -->
+                                <tr class="table-section-header">
+                                    <th scope="row" class="px-6 py-3 text-base font-bold text-cyan-400">知識庫內容</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">基礎知識庫（保險法, 遺贈稅基礎）</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">知識庫不斷更新</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">國稅類函釋（15種國稅，共 340 萬字+）</td><td class="px-6 py-4 text-center">無或1則</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">金融保險和解實例（2,000萬字+, 6,000+則）</td><td class="px-6 py-4 text-center">無或1則</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">民事裁判書彙編（200萬字+）</td><td class="px-6 py-4 text-center">無或1則</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">刑事裁判書彙編（400萬字+）</td><td class="px-6 py-4 text-center">無或1則</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">行政函釋（700萬字+）</td><td class="px-6 py-4 text-center">無或1則</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">財稅/金融/訴願/信託/六法</td><td class="px-6 py-4 text-center">無或1則</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+
+                                <!-- Section: 網頁版使用者後台 -->
+                                <tr class="table-section-header">
+                                    <th scope="row" class="px-6 py-3 text-base font-bold text-cyan-400">網頁版使用者後台</th>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">網頁版實戰銷售指導機器人</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">網頁版保險機器人</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                                <tr class="bg-gray-900 border-b"><td class="px-6 py-4 font-medium text-gray-300">網頁版歷程記錄</td><td class="px-6 py-4 text-center cross-icon">✗</td><td class="px-6 py-4 text-center check-icon">✅</td><td class="px-6 py-4 text-center check-icon">✅</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="p-6 text-sm text-gray-400">
+                            <h4 class="font-bold text-gray-300 mb-2">備註：</h4>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>相關整理之資訊為 AI 搜找與整理，請務必自行查證。</li>
+                                <li>鑑於人工智慧技術之快速演進與市場環境之變化，相關價格及成本可能視情況調整。惟此等調整不影響既有用戶已完成之購買權益。</li>
+                                <li>自訂知識庫目前可以上傳的檔案格式：DOCX, PDF, TXT, PPTX</li>
+                                <li>訴願決定書（更新中，未來即將上架；共9,300萬字+；39種財稅決定書）</li>
+                                <li>信託類別（更新中，未來即將上架）</li>
+                                <li>其他類別（更新中，未來即將上架）</li>
+                                <li>月費訂閱制：彈性付款、隨時可停。若需暫停服務，歡迎透過此<a href="https://lin.ee/5yQsERt" class="text-cyan-400 underline" target="_blank">連結聯繫我們的專人</a>協助處理</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Grid Section Removed -->
+                <!-- 定價方案已移除，請前往專門的定價頁面查看 -->
+
+                <!-- AI保險科技實戰分享 播放清單區塊 -->
+                <section id="live-sharing" class="py-16 md:py-24 bg-gray-900/60 scroll-mt-20">
+                    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <h2 class="font-orbitron text-3xl md:text-4xl font-bold gradient-text mb-4">
+                            AI保險科技實戰分享
+                        </h2>
+                        <p class="text-lg text-gray-300 mb-8">
+                            精選產業實戰案例與AI應用解析，持續更新，歡迎訂閱追蹤！
+                        </p>
+                        <div class="flex justify-center">
+                            <div class="w-full max-w-3xl aspect-video rounded-2xl overflow-hidden shadow-2xl border border-cyan-700">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLZExHhjtL82X_tH-PVw3adskNY1aVqckQ"
+                                    title="AI保險科技實戰分享 YouTube 播放清單" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen class="w-full h-full"></iframe>
+                            </div>
+                        </div>
+                        <a href="https://www.youtube.com/playlist?list=PLZExHhjtL82X_tH-PVw3adskNY1aVqckQ" target="_blank"
+                           class="mt-8 inline-block cta-button font-bold py-3 px-8 rounded-lg text-lg text-white">
+                            前往 YouTube 播放清單
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+    <footer id="main-footer" class="bg-gray-900/50 border-t border-gray-700/50">
+        
+            <!-- SEO 內容區塊 -->
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-4">關於奇點 JudgAI</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            奇點是台灣領先的<strong>AI保險科技</strong>平台，專為保險業務員、保險顧問打造的<strong>AI智能助手</strong>。我們將複雜的保險法規轉化為易懂的專業諮詢，讓每位<strong>保險專業者</strong>都能擁有一位懂法的科技夥伴。
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-4">核心服務</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• <strong>AI保險法規分析</strong> - 智能解讀保險條款</li>
+                            <li>• <strong>保單銷售輔助</strong> - AI驅動的銷售工具</li>
+                            <li>• <strong>客戶諮詢AI化</strong> - 提升服務效率</li>
+                            <li>• <strong>保險科技培訓</strong> - 專業知識數位化</li>
+                            <li>• <strong>InsurTech解決方案</strong> - 保險業數位轉型</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white mb-4">相關關鍵詞</h3>
+                        <div id="footer-keywords" class="flex flex-wrap gap-2">
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">奇點AI</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">AI保險</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">保險科技</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">JudgAI</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">保險AI助手</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">InsurTech</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">智能保險</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">保險數位化</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-400 border-t border-gray-700">
+                <p>&copy; 2025 奇點 JudgAI. All Rights Reserved.</p>
+                <p class="text-sm mt-2">台灣領先的AI保險科技平台 | 專業保險AI助手 | InsurTech創新解決方案</p>
+                <div class="mt-3 space-y-1 text-sm">
+                    <p>客服信箱：<a href="mailto:judgai.global@judgai.com" class="text-cyan-400 hover:text-cyan-300 transition-colors">judgai.global@judgai.com</a></p>
+                    <a href="#" id="termsLink" class="hover:text-cyan-400 transition-colors">服務條款</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal for Image Enlargement -->
+    <div id="imageModal" class="modal-overlay fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center p-4 z-50 hidden">
+        <span class="close-modal-btn absolute top-4 right-6 text-white text-5xl font-bold cursor-pointer hover:text-gray-300 transition-colors">&times;</span>
+        <img id="modalImage" src="" alt="放大圖片" class="modal-content max-w-full max-h-full rounded-lg shadow-2xl">
+    </div>
+
+    <!-- Modal for Terms of Service -->
+    <div id="termsModal" class="modal-overlay fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center p-4 z-50 hidden">
+        <div class="modal-content bg-gray-900 border border-cyan-500/30 rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-center p-6 border-b border-gray-700">
+                <h2 class="text-2xl font-bold text-white font-orbitron">服務條款</h2>
+                <span class="close-modal-btn text-white text-3xl font-bold cursor-pointer hover:text-gray-300 transition-colors">&times;</span>
+            </div>
+            <div class="p-8 text-gray-300 overflow-y-auto">
+                <p class="mb-4">歡迎您使用本網站。在使用本網站提供的各項服務前，請您詳閱以下服務條款。一旦您使用本網站，即表示您已閱讀、瞭解並同意遵守這些條款之所有內容。如果您不同意這些條款，請停止使用本網站。</p>
+                
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">一、使用許可</h3>
+                <p>本網站授予您有限的、個人的、非轉讓的許可，用於訪問及使用本網站。您同意不會以任何非法的方式使用本網站，並同意遵守所有相關的法律法規。</p>
+                
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">二、使用者義務</h3>
+                <p class="mb-2">使用者應遵守相關法律法規，不得利用本網站從事任何非法行為。</p>
+                <p>使用者不得干擾或破壞本網站的正常運作，包括但不限於散播病毒、駭客攻擊等行為。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">三、智慧財產權</h3>
+                <p class="mb-2">本網站上的所有內容，包括但不限於文字、圖片、音頻、視頻、標誌、商標，均受到版權、商標和其他相關法律的保護。</p>
+                <p>您同意不得未經本網站所有者的明確書面許可，複製、修改、分發、散佈或以其他方式使用本網站上的任何內容。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">四、免責聲明</h3>
+                <p class="mb-2">本網站所提供之資訊僅供參考，對於其正確性、完整性或即時性不作任何保證。使用本網站的信息時，請謹慎判斷並在必要時諮詢專業意見。</p>
+                <p>使用者因依據本網站資訊所為之行為，所產生之任何損害，本網站不負任何責任。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">五、條款修改</h3>
+                <p>本網站保留隨時修改本條款之權利，修改後的條款將公布於網站上，使用者應定期查閱。若使用者在條款修改後繼續使用本網站，視為同意該修改內容。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">六、其他條款</h3>
+                <p class="mb-2">這些使用條款構成您與本網站之間的全部協議，並取代任何先前的協議。</p>
+                <p>本網站保留解釋、修改或補充這些使用條款的權利。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Free Trial Terms Modal -->
+    <div id="freeTrialTermsModal" class="modal-overlay fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center p-4 z-50 hidden">
+        <div class="modal-content bg-gray-900 border border-cyan-500/30 rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-center p-6 border-b border-gray-700">
+                <h2 class="text-2xl font-bold text-white font-orbitron">服務條款（免費試用）</h2>
+                <span class="close-modal-btn text-white text-3xl font-bold cursor-pointer hover:text-gray-300 transition-colors">&times;</span>
+            </div>
+            <div class="p-8 text-gray-300 overflow-y-auto">
+                <p class="mb-4">歡迎您使用本網站。在使用本網站提供的各項服務前，請您詳閱以下服務條款。一旦您使用本網站，即表示您已閱讀、瞭解並同意遵守這些條款之所有內容。如果您不同意這些條款，請停止使用本網站。</p>
+                
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">一、使用許可</h3>
+                <p>本網站授予您有限的、個人的、非轉讓的許可，用於訪問及使用本網站。您同意不會以任何非法的方式使用本網站，並同意遵守所有相關的法律法規。</p>
+                
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">二、使用者義務</h3>
+                <p class="mb-2">使用者應遵守相關法律法規，不得利用本網站從事任何非法行為。</p>
+                <p>使用者不得干擾或破壞本網站的正常運作，包括但不限於散播病毒、駭客攻擊等行為。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">三、智慧財產權</h3>
+                <p class="mb-2">本網站上的所有內容，包括但不限於文字、圖片、音頻、視頻、標誌、商標，均受到版權、商標和其他相關法律的保護。</p>
+                <p>您同意不得未經本網站所有者的明確書面許可，複製、修改、分發、散佈或以其他方式使用本網站上的任何內容。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">四、免責聲明</h3>
+                <p class="mb-2">本網站所提供之資訊僅供參考，對於其正確性、完整性或即時性不作任何保證。使用本網站的信息時，請謹慎判斷並在必要時諮詢專業意見。</p>
+                <p>使用者因依據本網站資訊所為之行為，所產生之任何損害，本網站不負任何責任。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">五、條款修改</h3>
+                <p>本網站保留隨時修改本條款之權利，修改後的條款將公布於網站上，使用者應定期查閱。若使用者在條款修改後繼續使用本網站，視為同意該修改內容。</p>
+
+                <h3 class="text-lg font-bold text-cyan-400 mt-6 mb-2">六、其他條款</h3>
+                <p class="mb-2">這些使用條款構成您與本網站之間的全部協議，並取代任何先前的協議。</p>
+                <p>本網站保留解釋、修改或補充這些使用條款的權利。</p>
+            </div>
+            <div class="flex justify-end gap-4 p-6 border-t border-gray-700">
+                <button onclick="closeFreeTrialTerms()" class="px-6 py-2 border border-gray-500 text-gray-300 rounded-lg hover:bg-gray-700 transition-colors">取消</button>
+                <button onclick="acceptFreeTrialTerms()" class="px-6 py-2 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg transition-colors">我同意並繼續</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Free Trial Terms Modal Functions
+        function showFreTrialTerms() {
+            document.getElementById('freeTrialTermsModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeFreeTrialTerms() {
+            document.getElementById('freeTrialTermsModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function acceptFreeTrialTerms() {
+            // 關閉條款視窗
+            closeFreeTrialTerms();
+            // 跳轉到免費試用頁面
+            window.open('https://aistudy.pse.is/insurance-bot', '_blank');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Image Modal Logic ---
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const enlargeableImages = document.querySelectorAll('.enlargeable-image');
+            let scale = 1;
+            let startY = 0;
+            let lastY = 0;
+            let dragging = false;
+
+            enlargeableImages.forEach(img => {
+                img.addEventListener('click', () => {
+                    imageModal.classList.remove('hidden');
+                    modalImage.src = img.getAttribute('data-full') || img.src;
+                    scale = 1;
+                    lastY = 0;
+                    modalImage.style.transform = 'translateY(0px) scale(1)';
+                });
+            });
+
+            // 滾輪縮放
+            modalImage.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                let delta = e.deltaY > 0 ? -0.1 : 0.1;
+                scale = Math.min(Math.max(0.5, scale + delta), 5);
+                modalImage.style.transform = `translateY(${lastY}px) scale(${scale})`;
+            });
+
+            // 垂直拖曳
+            modalImage.addEventListener('mousedown', (e) => {
+                dragging = true;
+                startY = e.clientY - lastY;
+                modalImage.style.cursor = 'grabbing';
+            });
+            window.addEventListener('mousemove', (e) => {
+                if (!dragging) return;
+                lastY = e.clientY - startY;
+                modalImage.style.transform = `translateY(${lastY}px) scale(${scale})`;
+            });
+            window.addEventListener('mouseup', () => {
+                dragging = false;
+                modalImage.style.cursor = 'grab';
+            });
+
+            // 關閉 modal
+            imageModal.addEventListener('click', (e) => {
+                if (e.target === imageModal || e.target.classList.contains('close-modal-btn')) {
+                    imageModal.classList.add('hidden');
+                    modalImage.src = '';
+                }
+            });
+
+            // --- Terms Modal Logic ---
+            const termsModal = document.getElementById('termsModal');
+            const termsLink = document.getElementById('termsLink');
+
+            termsLink.addEventListener('click', (e) => {
+                e.preventDefault(); // 防止頁面跳轉
+                termsModal.classList.remove('hidden');
+            });
+
+            // --- Generic Modal Closing Logic ---
+            const allCloseButtons = document.querySelectorAll('.close-modal-btn');
+            const allModals = document.querySelectorAll('.modal-overlay');
+
+            const closeModal = (modal) => {
+                modal.classList.add('hidden');
+            };
+
+            allCloseButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // 找到最近的 modal-overlay 父元素並關閉它
+                    closeModal(button.closest('.modal-overlay'));
+                });
+            });
+
+            allModals.forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    // 如果點擊的是背景本身 (modal-overlay)，則關閉 modal
+                    if (e.target === modal) {
+                        closeModal(modal);
+                    }
+                });
+            });
+            
+            // 手機版菜單切換
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // 平滑滾動到錨點
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // 如果是手機版，點擊後關閉菜單
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+            
+            // 滾動時修改導航樣式
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.style.background = 'rgba(5, 8, 22, 0.98)';
+                } else {
+                    header.style.background = 'rgba(5, 8, 22, 0.95)';
+                }
+            });
+        });
+    </script>
+    
+    <!-- 主題切換管理器 -->
+    <script src="js/theme-manager.js"></script>
+
+</body>
+</html>

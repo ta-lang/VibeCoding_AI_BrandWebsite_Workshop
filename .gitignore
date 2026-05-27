@@ -1,0 +1,9 @@
+# 忽略大二進位與非程式碼講義檔案
+*.pdf
+*PDF_text.txt
+/邱大郎 20250608.jpg
+
+# 忽略系統與 IDE 暫存
+.DS_Store
+Thumbs.db
+.gemini/

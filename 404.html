@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>正在導向首頁...</title>
+  <script>
+    // GitHub Pages 404 重定向邏輯，將所有大寫 Index.html 或無效路徑無縫重定向至小寫 index.html
+    const path = window.location.pathname;
+    if (path.toLowerCase().endsWith('/index.html')) {
+      window.location.replace(path.substring(0, path.lastIndexOf('/')) + '/index.html');
+    } else {
+      // 預設重定向回專案根目錄首頁
+      window.location.replace('/VibeCoding_AI_BrandWebsite_Workshop/index.html');
+    }
+  </script>
+</head>
+<body>
+  <p style="font-family: sans-serif; text-align: center; margin-top: 100px; color: #8a99a8;">正在為您導向正確的頁面，請稍候...</p>
+</body>
+</html>

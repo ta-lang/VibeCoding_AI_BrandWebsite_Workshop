@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Good hiking - 專業台灣百岳登山行程推廣網站。提供玉山主峰、雪山圈谷、奇萊南華等經典路線的專業嚮導、精緻協作與行程諮詢服務。">
+  <title>Good hiking | 踏上巔峰，探尋台灣百岳之美</title>
+  <!-- SEO Heading Structure Rules & Icons -->
+  <link rel="stylesheet" href="hiking.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="logo">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 20L10 6L14 13L17 8L21 20H3Z" />
+          <path d="M10 6L12 3L14 6" />
+        </svg>
+        <span>Good hiking</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link">首頁</a>
+        <a href="#itineraries" class="nav-link">熱門行程</a>
+        <a href="#features" class="nav-link">行程特色</a>
+        <a href="#gear" class="nav-link">裝備建議</a>
+        <a href="#register" class="nav-link">預約報名</a>
+        <a href="https://calendar.app.google/EHYFetxKtzJjMpEGA" target="_blank" rel="noopener" class="btn btn-primary nav-btn">立即預約</a>
+      </nav>
+      
+      <button class="hamburger" id="hamburger-toggle" aria-label="切換選單">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <img src="images/hero_yushan.png" alt="台灣玉山主峰日出雲海" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          探索百岳之美
+        </div>
+        <h1 class="hero-title">踏上巔峰<br>探尋<span>台灣百岳</span>的壯麗</h1>
+        <p class="hero-description">Good hiking 帶領您走進台灣最深邃的脊樑。從東亞最高峰玉山，到雪山大圈谷，體驗專業安全、免背免備的極致健行旅程，與大自然展開一場心靈對話。</p>
+        <div class="hero-btns">
+          <a href="#itineraries" class="btn btn-primary">探索行程</a>
+          <a href="https://calendar.app.google/EHYFetxKtzJjMpEGA" target="_blank" rel="noopener" class="btn btn-secondary">預約諮詢</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Itineraries Section -->
+  <section class="section" id="itineraries">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">經典推廣行程</span>
+        <h2 class="section-title">熱門百岳行程介紹</h2>
+      </div>
+      
+      <div class="itinerary-grid">
+        <!-- Card 1: 玉山主峰 -->
+        <article class="itinerary-card">
+          <div class="itinerary-img-wrapper">
+            <img src="images/hero_yushan.png" alt="玉山主峰日出挑戰" class="itinerary-img">
+            <div class="itinerary-badge">百岳入門</div>
+          </div>
+          <div class="itinerary-body">
+            <div class="itinerary-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg> 2 天 1 夜
+              </span>
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 22h20L12 2z"/>
+                </svg> 海拔 3,952M
+              </span>
+            </div>
+            <h3 class="itinerary-name">玉山主峰挑戰之行</h3>
+            <p class="itinerary-desc">東北亞最高峰的史詩旅程。沿著玉山步道緩步上升，體驗排雲山莊的高山協作服務，並在山頂迎接染紅群山的金色日出。</p>
+            <div class="itinerary-footer">
+              <div class="itinerary-price">費用 <span>$6,800</span> 起 / 人</div>
+              <a href="https://calendar.app.google/EHYFetxKtzJjMpEGA" target="_blank" rel="noopener" class="itinerary-btn">
+                立即預約
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: 雪山主東峰 -->
+        <article class="itinerary-card">
+          <div class="itinerary-img-wrapper">
+            <img src="images/hiker_ridge.png" alt="雪山主東峰圈谷健行" class="itinerary-img">
+            <div class="itinerary-badge">經典必爬</div>
+          </div>
+          <div class="itinerary-body">
+            <div class="itinerary-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg> 2 天 1 夜
+              </span>
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 22h20L12 2z"/>
+                </svg> 海拔 3,886M
+              </span>
+            </div>
+            <h3 class="itinerary-name">雪山主東峰圈谷探秘</h3>
+            <p class="itinerary-desc">攀登台灣第二高峰，穿過迷人的冷杉黑森林，站在巨大的冰河圈谷前屏息凝視，飽覽聖稜線的巍峨雄姿與壯觀景象。</p>
+            <div class="itinerary-footer">
+              <div class="itinerary-price">費用 <span>$6,200</span> 起 / 人</div>
+              <a href="https://calendar.app.google/EHYFetxKtzJjMpEGA" target="_blank" rel="noopener" class="itinerary-btn">
+                立即預約
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: 奇萊南華 -->
+        <article class="itinerary-card">
+          <div class="itinerary-img-wrapper">
+            <img src="images/gear_flatlay.png" alt="奇萊南華金色草原" class="itinerary-img">
+            <div class="itinerary-badge">免背重裝</div>
+          </div>
+          <div class="itinerary-body">
+            <div class="itinerary-meta">
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg> 2 天 2 夜
+              </span>
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 22h20L12 2z"/>
+                </svg> 海拔 3,358M
+              </span>
+            </div>
+            <h3 class="itinerary-name">奇萊南華金色草原健行</h3>
+            <p class="itinerary-desc">漫步在能高越嶺古道上，下榻全台最豪華的天池山莊。清晨在天池畔等待朝陽，欣賞奇萊南峰與南華山連綿的黃金草原大景。</p>
+            <div class="itinerary-footer">
+              <div class="itinerary-price">費用 <span>$5,800</span> 起 / 人</div>
+              <a href="https://calendar.app.google/EHYFetxKtzJjMpEGA" target="_blank" rel="noopener" class="itinerary-btn">
+                立即預約
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">我們的優勢</span>
+        <h2 class="section-title">為什麼選擇 Good hiking？</h2>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature 1: 專業嚮導 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">專業國家級嚮導</h3>
+          <p class="feature-desc">所有嚮導均擁有教育部體育署與國家公園認證證照、WFR高山野外急救證照，並具備豐富攀登經驗，給予您最安心的陪伴。</p>
+        </div>
+
+        <!-- Feature 2: 協作伙食 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">免背重裝與頂級伙食</h3>
+          <p class="feature-desc">公糧、睡袋、帳篷全部有專業協作為您提前背運上山。下榻山莊或營地時，更有精緻溫暖的熱騰騰中西式晚餐等您品嚐。</p>
+        </div>
+
+        <!-- Feature 3: 安全把關 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">安全至上・科技把關</h3>
+          <p class="feature-desc">全隊配備高功率雙頻無線電、Garmin InReach 雙向衛星通訊器。每日行程精確回報，並針對行前健康實施嚴格評估。</p>
+        </div>
+      </div>
+
+      <!-- Feature Showcase Grid Layout -->
+      <div class="showcase-wrapper" style="margin-top: 100px;">
+        <div class="showcase-img-container">
+          <div class="showcase-img-border"></div>
+          <div class="showcase-img-wrapper">
+            <img src="images/hiker_ridge.png" alt="山林間的健行者" class="showcase-img">
+          </div>
+        </div>
+        
+        <div class="showcase-content-wrapper">
+          <span class="showcase-tag">安全防禦 & CRA 信賴度</span>
+          <h3 class="showcase-title">符合歐盟 CRA 安全基準的預約系統</h3>
+          <p class="showcase-desc">我們不只重視您在山林裡的安全，更重視您的隱私與資訊安全。本站的預約報名系統，採用現代化的安全驗證設計，以高水準的資安原則保護您的報名隱私資料。</p>
+          
+          <div class="showcase-list">
+            <div class="showcase-item">
+              <div class="showcase-item-icon">✓</div>
+              <div>
+                <h4 class="showcase-item-title">資料傳輸加密</h4>
+                <p class="showcase-item-desc">所有表單資料提交均透過 HTTPS 進行端對端高強度加密，確保個資不外洩。</p>
+              </div>
+            </div>
+            
+            <div class="showcase-item">
+              <div class="showcase-item-icon">✓</div>
+              <div>
+                <h4 class="showcase-item-title">最小化數據收集</h4>
+                <p class="showcase-item-desc">我們僅收集行程報名必需的基本聯絡資料，絕不過度向使用者索取非必要隱私權限。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gear Guide Section -->
+  <section class="section gear-section" id="gear">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">準備指南</span>
+        <h2 class="section-title">登山裝備準備建議</h2>
+      </div>
+      
+      <div class="gear-wrapper">
+        <!-- Interactive Tabs and Checklist -->
+        <div class="gear-interactive">
+          <div class="gear-tabs">
+            <button class="gear-tab-btn active" data-tab="clothing">服飾鞋襪</button>
+            <button class="gear-tab-btn" data-tab="sleeping">背包與睡眠</button>
+            <button class="gear-tab-btn" data-tab="essentials">個人隨身</button>
+          </div>
+          
+          <!-- Content 1: Clothing -->
+          <div class="gear-content active" id="clothing">
+            <div class="gear-checklist">
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">底層排汗衣（聚酯纖維/美麗諾羊毛）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">保暖層（羽絨外套/刷毛衣）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">外層防風防水雨衣、雨褲（如 Gore-Tex）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">中筒或高筒登山鞋（防水且抓地力佳）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">登山厚襪與遮陽帽/保暖毛帽</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+            </div>
+          </div>
+          
+          <!-- Content 2: Sleeping & Packs -->
+          <div class="gear-content" id="sleeping">
+            <div class="gear-checklist">
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">中型登山背包（建議 30L - 45L 輕裝即可）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">背包防雨罩</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">保暖睡袋（協作提供，可自備睡袋內襯）</span>
+                <span class="gear-item-desc">可選</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">充氣枕頭 / 折疊坐墊</span>
+                <span class="gear-item-desc">推薦</span>
+              </label>
+            </div>
+          </div>
+          
+          <!-- Content 3: Essentials -->
+          <div class="gear-content" id="essentials">
+            <div class="gear-checklist">
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">頭燈（附帶備用電池，高山夜行必備）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">登山杖（一對，減輕膝蓋受力）</span>
+                <span class="gear-item-desc">推薦</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">保溫瓶與水袋（能裝至少 1.5L - 2L）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">個人急救藥品、高山症藥物（丹木斯）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+              <label class="gear-item">
+                <input type="checkbox" name="gear-item">
+                <span class="gear-checkbox"></span>
+                <span class="gear-item-text">環保餐具（碗、筷、湯匙）</span>
+                <span class="gear-item-desc">必備</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Gear Flatlay illustration -->
+        <div class="gear-illustration">
+          <div class="gear-ill-border"></div>
+          <div class="gear-ill-wrapper">
+            <img src="images/gear_flatlay.png" alt="登山裝備平鋪圖" class="gear-ill-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section class="section form-section" id="register">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">開始您的冒險</span>
+        <h2 class="section-title">一鍵預約您的專屬諮詢</h2>
+      </div>
+      
+      <div class="form-wrapper" style="text-align: center; max-width: 650px;">
+        <div class="modal-icon" style="margin-bottom: 20px;">📅</div>
+        <h3 class="modal-title" style="margin-bottom: 15px;">已啟用 Google 日曆線上預約</h3>
+        <p class="modal-desc" style="margin-bottom: 35px; color: var(--text-muted); line-height: 1.8;">
+          我們已將報名流程簡化！您無須填寫繁複的個人聯絡表單。<br>
+          只需點擊下方按鈕，即可直接進入我們的 Google Calendar 預約頁面，挑選您最方便的時段。預約成功後，系統將自動為您與嚮導建立 Google Meet 視訊會議。
+        </p>
+        <a href="https://calendar.app.google/EHYFetxKtzJjMpEGA" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 18px 36px; font-size: 1.1rem; width: 100%; max-width: 320px;">
+          立即挑選諮詢時段
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Success Dialog -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-content">
+      <div class="modal-icon">✓</div>
+      <h3 class="modal-title">預約報名成功！</h3>
+      <p class="modal-desc">我們已收到您的百岳健行報名申請。<br>專業登山嚮導將於 24 小時內以 Email 與電話聯絡您，協助安排行前說明會與入山證申請！</p>
+      <button class="btn btn-primary modal-btn" id="close-modal">確認</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Side A: Logo & Description -->
+      <div class="footer-logo-side">
+        <a href="#hero" class="logo">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 20L10 6L14 13L17 8L21 20H3Z" />
+            <path d="M10 6L12 3L14 6" />
+          </svg>
+          <span>Good hiking</span>
+        </a>
+        <p class="footer-desc">台灣最專業的百岳健行推廣品牌。致力於提供安全、環保、且充滿感動的高山探險旅程。</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Facebook">FB</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social-link" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      
+      <!-- Side B: Links 1 -->
+      <div>
+        <h4 class="footer-title">關於我們</h4>
+        <div class="footer-links">
+          <a href="#features" class="footer-link">品牌優勢</a>
+          <a href="#" class="footer-link">嚮導團隊</a>
+          <a href="#" class="footer-link">學員見證</a>
+          <a href="#" class="footer-link">聯絡我們</a>
+        </div>
+      </div>
+
+      <!-- Side C: Links 2 -->
+      <div>
+        <h4 class="footer-title">推薦行程</h4>
+        <div class="footer-links">
+          <a href="#itineraries" class="footer-link">玉山主峰 2天1夜</a>
+          <a href="#itineraries" class="footer-link">雪山主東峰 2天1夜</a>
+          <a href="#itineraries" class="footer-link">奇萊南華 2天2夜</a>
+          <a href="#" class="footer-link">嘉明湖天使的眼淚</a>
+        </div>
+      </div>
+
+      <!-- Side D: Links 3 -->
+      <div>
+        <h4 class="footer-title">服務與安全基準</h4>
+        <div class="footer-links">
+          <a href="#" class="footer-link">退費條款與細則</a>
+          <a href="#" class="footer-link">LNT無痕山林原則</a>
+          <a href="#features" class="footer-link">CRA資安隱私說明</a>
+          <a href="#" class="footer-link">高山保險說明</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p class="footer-copyright">&copy; 2026 Good hiking Inc. All rights reserved. 邱大郎 監製開發</p>
+      <div class="footer-terms">
+        <a href="#" class="footer-terms-link">服務條款</a>
+        <a href="#" class="footer-terms-link">隱私權政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="hiking.js"></script>
+</body>
+</html>
